@@ -23,7 +23,7 @@ public class ProductGraphQLResolver {
     }
 
     @QueryMapping
-    public Product findOneProduct(@Argument Long id) {
+    public Product getProduct(@Argument Long id) {
         return productService.getProductById(id);
     }
 }
